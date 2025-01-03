@@ -3,6 +3,8 @@
 	import { github, instagram, linkedinSquare, envelope } from 'svelte-awesome/icons';
 	import Socials from './socials.svelte';
 	import pfp from '$lib/imgs/pfp.webp?enhanced';
+
+	const year = new Date().getFullYear();
 </script>
 
 <aside class="dark:text-white min-w-56 w-fit mt-8 left-32 pt-2 hidden md:block">
@@ -31,6 +33,6 @@
 	<Socials scale={1.5} />
 	<footer class="mt-1">
 		<a class="text-xs text-gray-500" href="https://github.com/rileyallyn/website">Source</a>
-		<p class="text-xs text-gray-500">© 2024 Riley Smith</p>
+		<p class="text-xs text-gray-500">© 2024-{year} Riley Smith</p>
 	</footer>
 </aside>
